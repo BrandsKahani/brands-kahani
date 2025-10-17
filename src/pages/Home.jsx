@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+/* ----------------------------- COMPONENT IMPORT ----------------------------- */
+import Hero from "../components/Hero"; // ✅ FIX: Hero component import added
+
 /* ----------------------------- IMAGE IMPORTS ----------------------------- */
 import mtj from "../assets/MTJ.jpg";
 import eto from "../assets/eto.jpg";
@@ -55,7 +58,7 @@ function BrandsSlider() {
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <Hero /> {/* ✅ FIXED white screen — Hero component now imported */}
 
       {/* About Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 py-16 sm:py-20">
