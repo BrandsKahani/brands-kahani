@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/", // ✅ root base for custom domain
+  base: "./", // ✅ relative paths — works with custom domains!
 });
